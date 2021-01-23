@@ -1,32 +1,24 @@
-public class MyApp : Gtk.Application {
-    public MyApp () {
+public class HelloAgain : Gtk.Application {
+    public class HelloAgain () {
         Object (
-            application_id: "com.github.cam-jm.gtk-hello",
+            application_id: "com.github.cam-jm.hello-again",
             flags: ApplicationFlags.FLAGS_NONE
         );
     }
-
+    
     protected override void activate () {
-
-        var button_hello = new Gtk.Button.with_label ("Click me!") {
-            margin = 12
-        };
-
-        button_hello.clicked.connect(() => {
-            button_hello.label = "Hello World!";
-            button_hello.sensitive = false;
-        });
-
+        
+        var label = new Gtk.Label ("Hello there 2.0");
         var main_window = new Gtk.ApplicationWindow (this) {
-            default_height = 300,
             default_width = 300,
-            title = "Hello World"
+            default_height = 300,
+            title = "Hello there"
         };
-        main_window.add (button_hello);
+        main_window.add (label);
         main_window.show_all ();
     }
-
+    
     public static int main (string[] args) {
-        return new MyApp ().run (args);
+        return new HelloAgain ().run (args);
     }
 }
