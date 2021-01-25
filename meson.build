@@ -13,14 +13,14 @@ executable(
 
 # Install .desktop
 install_data(
-    join_paths('data',hello_again.desktop'),
-    install_dir: join_paths(get_option('datadir'), 'applications),
+    join_paths('data','hello-again.desktop'),
+    install_dir: join_paths(get_option('datadir'), 'applications'),
     rename: meson.project_name() + '.desktop'
 )
 
 # Install .appdata.xml for AcppCenter
 install_data(
     join_paths('data', 'hello-again.appdata.xml'),
-    Install_dir: join_paths(get_option('datadir'), 'metainfo'),
+    install_dir: join_paths(get_option('datadir'), 'metainfo'),
     rename: meson.project_name() + '.appdata.xml'
 )
