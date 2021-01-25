@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2021 Your Name <you@email.com> -->
+<component type="deksktop">
+    <id>com.github.cam-jm.hello-gtk</id>
+    <metadata_license>CC0</metadata_license>
+    <name>Hello again</name>
+    <summary>Hello world pt2 electric boogaloo</summary>
+    <description>
+        <p>IT's a hello world app. A description isn't really needed.</p>
+    </description>
+</component>
