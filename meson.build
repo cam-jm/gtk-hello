@@ -1,5 +1,5 @@
 # Project name and language
-project('com.github.cam-jm.gtk-hello', 'vala', 'c')
+project('com.github.cam-jm.hello-again', 'vala', 'c')
 
 # Create new executable, list the files to compile, list deps, install
 executable(
